@@ -1,6 +1,5 @@
 package com.blackjack.lib
 
-import android.app.Activity
 import android.app.Dialog
 import android.content.Context
 import android.content.Intent
@@ -9,9 +8,10 @@ import android.preference.PreferenceManager
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.blackjack.lib.game.GameViewCallback
-import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.dialog_help.view.*
+import kotlinx.android.synthetic.main.jk_activity_main.*
+import kotlinx.android.synthetic.main.jk_dialog_help.view.*
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -19,7 +19,7 @@ import java.util.*
  * Created by shen on 17/5/26.
  */
 
-class MainActivity : Activity() {
+class MainActivity : AppCompatActivity() {
     /**
      * 每天最多免费赠送次数
      */
@@ -33,7 +33,7 @@ class MainActivity : Activity() {
     companion object {
         fun start(context: Context) {
             val intent = Intent(context, MainActivity::class.java)
-            if (context !is Activity) {
+            if (context !is AppCompatActivity) {
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
             }
             context.startActivity(intent)
@@ -42,7 +42,7 @@ class MainActivity : Activity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.jk_activity_main)
 
         helpView.setItemClickListener(helpViewOnClickListener)
         gameView.gameViewCallback = gameViewCallback
@@ -62,7 +62,7 @@ class MainActivity : Activity() {
 
     private fun openHelpPage() {
         val dialog = Dialog(this, R.style.TransparentDialog)
-        val view = LayoutInflater.from(this).inflate(R.layout.dialog_help, null, false)
+        val view = LayoutInflater.from(this).inflate(R.layout.jk_dialog_help, null, false)
         dialog.setContentView(view)
         dialog.setCanceledOnTouchOutside(true)
         view.dialogRootView.setOnClickListener { dialog.dismiss() }
@@ -79,9 +79,9 @@ class MainActivity : Activity() {
             if (newScore == 0) {
                 var freeScore = getFreeScore()
                 if (freeScore == 0) {
-                    alertText("您今天的筹码已经用光，请明天再来！")
+                    alertText("You have run out of chips today, please come back tomorrow!")
                 } else {
-                    alertText("您获得了" + freeScore.toString() + "赠送筹码，请您享用")
+                    alertText("You got" + freeScore.toString() + "give away chips, please enjoy")
                     gameView.post {
                         gameView.updateScore(freeScore)
                         gameView.init()

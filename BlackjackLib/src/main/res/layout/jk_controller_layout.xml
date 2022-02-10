@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
-        android:background="@drawable/alert_right_bg">
+        android:background="@drawable/jk_alert_right_bg">
 
         <ImageView
             android:id="@+id/actionStart"
@@ -18,7 +18,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:soundEffectsEnabled="false"
-            android:src="@drawable/action_start" />
+            android:src="@drawable/jk_action_start" />
 
         <ImageView
             android:id="@+id/actionShuffle"
@@ -26,7 +26,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:soundEffectsEnabled="false"
-            android:src="@drawable/action_shuffle" />
+            android:src="@drawable/jk_jk_action_shuffle" />
     </FrameLayout>
 
 
@@ -52,7 +52,7 @@
             android:layout_height="match_parent"
             android:layout_margin="10dp"
             android:layout_weight="1"
-            android:background="@drawable/action_split"
+            android:background="@drawable/jk_action_split"
             android:soundEffectsEnabled="false"
             android:visibility="invisible" />
 
@@ -62,7 +62,7 @@
             android:layout_height="match_parent"
             android:layout_margin="10dp"
             android:layout_weight="1"
-            android:background="@drawable/action_double"
+            android:background="@drawable/jk_action_double"
             android:soundEffectsEnabled="false"
             android:visibility="invisible" />
 
@@ -72,7 +72,7 @@
             android:layout_height="match_parent"
             android:layout_margin="10dp"
             android:layout_weight="1"
-            android:background="@drawable/action_hit"
+            android:background="@drawable/jk_action_hit"
             android:soundEffectsEnabled="false"
             android:visibility="invisible" />
 
@@ -82,7 +82,7 @@
             android:layout_height="match_parent"
             android:layout_margin="10dp"
             android:layout_weight="1"
-            android:background="@drawable/action_stand"
+            android:background="@drawable/jk_action_stand"
             android:soundEffectsEnabled="false"
             android:visibility="invisible" />
     </LinearLayout>

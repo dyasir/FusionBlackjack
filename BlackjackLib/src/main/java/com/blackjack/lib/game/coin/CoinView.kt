@@ -14,7 +14,7 @@ import com.blackjack.lib.L
 import com.blackjack.lib.R
 import com.blackjack.lib.SoundPoolManager
 import com.blackjack.lib.game.GameView
-import kotlinx.android.synthetic.main.coin_layout.view.*
+import kotlinx.android.synthetic.main.jk_coin_layout.view.*
 
 /**
  * Created by shen on 17/5/28.
@@ -24,11 +24,11 @@ class CoinView(context: Context?, attrs: AttributeSet?) : FrameLayout(context!!,
         var coinMap: HashMap<Int, Int> = HashMap()
 
         init {
-            coinMap[5] = R.drawable.score5
-            coinMap[10] = R.drawable.score10
-            coinMap[25] = R.drawable.score25
-            coinMap[100] = R.drawable.score100
-            coinMap[500] = R.drawable.score500
+            coinMap[5] = R.drawable.jk_score5
+            coinMap[10] = R.drawable.jk_score10
+            coinMap[25] = R.drawable.jk_score25
+            coinMap[100] = R.drawable.jk_score100
+            coinMap[500] = R.drawable.jk_score500
         }
     }
 
@@ -43,7 +43,7 @@ class CoinView(context: Context?, attrs: AttributeSet?) : FrameLayout(context!!,
     private var animatorSet: AnimatorSet = AnimatorSet()
 
     init {
-        View.inflate(context, R.layout.coin_layout, this)
+        View.inflate(context, R.layout.jk_coin_layout, this)
         bottomCoin.layoutParams.height = CommonUtils.getScreenWidth(context!!) / 4
         betCoin.betCallback = object : BetCoin.BetCallback {
             override fun onResetBet(score: Int) {

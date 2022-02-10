@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:background="@drawable/bet_bg"
+        android:background="@drawable/jk_bet_bg"
         android:layout_alignParentBottom="true">
 
         <View
@@ -23,7 +23,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/score5"
+            android:background="@drawable/jk_score5"
             android:layout_margin="10dp"
             android:soundEffectsEnabled="false"/>
 
@@ -32,7 +32,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/score10"
+            android:background="@drawable/jk_score10"
             android:layout_margin="10dp"
             android:soundEffectsEnabled="false"/>
 
@@ -41,7 +41,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/score25"
+            android:background="@drawable/jk_score25"
             android:layout_margin="10dp"
             android:soundEffectsEnabled="false"/>
 
@@ -50,7 +50,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/score100"
+            android:background="@drawable/jk_score100"
             android:layout_margin="10dp"
             android:soundEffectsEnabled="false"/>
     </LinearLayout>

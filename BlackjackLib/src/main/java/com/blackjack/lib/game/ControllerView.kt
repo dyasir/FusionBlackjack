@@ -8,7 +8,7 @@ import android.widget.FrameLayout
 import com.blackjack.lib.CommonUtils
 import com.blackjack.lib.L
 import com.blackjack.lib.R
-import kotlinx.android.synthetic.main.controller_layout.view.*
+import kotlinx.android.synthetic.main.jk_controller_layout.view.*
 
 /**
  * Created by shen on 17/5/29.
@@ -119,7 +119,7 @@ class ControllerView(context: Context?, attrs: AttributeSet?) : FrameLayout(cont
     }
 
     init {
-        View.inflate(context, R.layout.controller_layout, this)
+        View.inflate(context, R.layout.jk_controller_layout, this)
         val layoutParams = bottomController.layoutParams
         layoutParams.height = CommonUtils.getScreenWidth(context!!) / 4
         actionSplit.setOnClickListener {

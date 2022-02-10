@@ -1,6 +1,4 @@
 <resources>
-    <string name="app_name">BlackJack</string>
-
     <string name="dialog_confirm">Ok</string>
     <string name="dialog_cancel">Cancel</string>
     <string name="game_over">This time you got %1d points, do you try again？</string>
@@ -13,13 +11,13 @@
     <string name="tips">Tips</string>
 
 
-    <string name="current_score_hint">Credits</string>
-    <string name="current_score">$%1$s</string>
-    <string name="bet_score_hint">Your Bet</string>
-    <string name="bet_score">$%1$s</string>
+    <string name="jk_current_score_hint">Credits</string>
+    <string name="jk_current_score">$%1$s</string>
+    <string name="jk_bet_score_hint">Your Bet</string>
+    <string name="jk_bet_score">$%1$s</string>
 
-    <string name="rule_title">Rule Declaration</string>
-    <string name="rule">Count: \n cards have 2 points, to 10 points is the card card number; J, Q, K points is 10 points; A has two kinds of algorithm, 1 or 11, if the A count is 11 greater than the sum of 21, A is 1. For example, (A, 8) is 19, and (A, 7, J) is 18.
+    <string name="jk_rule_title">Rule Declaration</string>
+    <string name="jk_rule">Count: \n cards have 2 points, to 10 points is the card card number; J, Q, K points is 10 points; A has two kinds of algorithm, 1 or 11, if the A count is 11 greater than the sum of 21, A is 1. For example, (A, 8) is 19, and (A, 7, J) is 18.
 \n card: \n player\'s total number of cards in hand is more than 21 points.
 \n Black Jack (BlackJack): \n a A with a 10 point card, larger than the other 21 cards, such as (A, Q). Black Jack gets 1.5 times the bet.
 \n suspension: \n players no longer play cards, wait for other players to operate.

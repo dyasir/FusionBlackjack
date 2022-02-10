@@ -17,8 +17,8 @@ import com.blackjack.lib.L
 import com.blackjack.lib.R
 import com.blackjack.lib.SoundPoolManager
 import com.blackjack.lib.game.GameView
-import kotlinx.android.synthetic.main.back_card_layout.view.*
-import kotlinx.android.synthetic.main.card_layout.view.*
+import kotlinx.android.synthetic.main.jk_back_card_layout.view.*
+import kotlinx.android.synthetic.main.jk_card_layout.view.*
 
 
 /**
@@ -29,7 +29,7 @@ class CardView(context: Context?, attrs: AttributeSet?) : FrameLayout(context!!,
     var isHitSecond = false
 
     private var resArray: Array<String> =
-        arrayOf("card_diamonds_", "card_clubs_", "card_hearts_", "card_spades_")
+        arrayOf("jk_card_diamonds_", "jk_card_clubs_", "jk_card_hearts_", "jk_card_spades_")
     private var marginPx = context?.let { CommonUtils.dpToPx(it, 25) }
     var blackCard: Drawable
     private fun getCardRes(card: Int): Int {
@@ -136,7 +136,7 @@ class CardView(context: Context?, attrs: AttributeSet?) : FrameLayout(context!!,
             var itemView: View
             val drawable: Drawable? = context.getDrawable(getCardRes(cards[i]))
             itemView = if (i != 0) {
-                val view = View.inflate(context, R.layout.back_card_layout, null)
+                val view = View.inflate(context, R.layout.jk_back_card_layout, null)
                 view.backView.setImageDrawable(blackCard)
                 view.frontView.setImageDrawable(drawable)
                 view.setTag(R.id.cardView, cards[i])
@@ -282,7 +282,7 @@ class CardView(context: Context?, attrs: AttributeSet?) : FrameLayout(context!!,
     fun addPointHintView(viewGroup: ViewGroup, initStr: String?): Int {
         val pointHintView = TextView(context)
         pointHintView.gravity = Gravity.CENTER
-        val drawable = context.getDrawable(R.drawable.alert_small_bg)
+        val drawable = context.getDrawable(R.drawable.jk_alert_small_bg)
         pointHintView.background = drawable
         initStr?.let { pointHintView.text = it }
 
@@ -304,12 +304,12 @@ class CardView(context: Context?, attrs: AttributeSet?) : FrameLayout(context!!,
     }
 
     init {
-        View.inflate(context, R.layout.card_layout, this)
+        View.inflate(context, R.layout.jk_card_layout, this)
         val layoutParams = userCardsLayout.layoutParams as LinearLayout.LayoutParams
         layoutParams.bottomMargin = CommonUtils.getScreenWidth(context!!) / 2
         val layoutParams2 = userCardsLayout2.layoutParams as LinearLayout.LayoutParams
         layoutParams2.bottomMargin = layoutParams.bottomMargin
-        blackCard = context.resources.getDrawable(R.drawable.card_back, context.theme)
+        blackCard = context.resources.getDrawable(R.drawable.jk_card_back, context.theme)
         bankerCardsLayout.minimumHeight = blackCard.intrinsicHeight
     }
 }

@@ -9,10 +9,10 @@ import com.blackjack.lib.L
 import com.blackjack.lib.R
 import com.blackjack.lib.SoundPoolManager
 import com.blackjack.lib.game.coin.CoinView
-import kotlinx.android.synthetic.main.card_layout.view.*
-import kotlinx.android.synthetic.main.controller_layout.view.*
-import kotlinx.android.synthetic.main.game_layout.view.*
-import kotlinx.android.synthetic.main.information_layout.view.*
+import kotlinx.android.synthetic.main.jk_card_layout.view.*
+import kotlinx.android.synthetic.main.jk_controller_layout.view.*
+import kotlinx.android.synthetic.main.jk_game_layout.view.*
+import kotlinx.android.synthetic.main.jk_information_layout.view.*
 import java.util.*
 
 /**
@@ -491,7 +491,7 @@ class GameView(context: Context?, attrs: AttributeSet?) : FrameLayout(context!!,
     }
 
     init {
-        View.inflate(context, R.layout.game_layout, this)
+        View.inflate(context, R.layout.jk_game_layout, this)
         initData()
         initView()
     }

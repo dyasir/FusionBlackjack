@@ -7,7 +7,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/dialog_bg"
+        android:background="@drawable/jk_dialog_bg"
         android:layout_marginBottom="50dp">
 
         <LinearLayout xmlns:tools="http://schemas.android.com/tools"
@@ -23,14 +23,14 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="45dp"
-                android:src="@drawable/back"
+                android:src="@drawable/jk_back"
                 android:visibility="gone" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="@string/rule_title"
+                android:text="@string/jk_rule_title"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold" />
 
@@ -38,7 +38,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="@string/rule"
+                android:text="@string/jk_rule"
                 android:textColor="#FFFFFF" />
 
         </LinearLayout>

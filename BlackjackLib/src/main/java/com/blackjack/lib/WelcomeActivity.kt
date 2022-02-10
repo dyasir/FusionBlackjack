@@ -1,18 +1,18 @@
 package com.blackjack.lib
 
-import android.app.Activity
 import android.os.Bundle
 import android.view.MotionEvent
 import android.view.animation.Animation
-import kotlinx.android.synthetic.main.activity_welcome.*
+import androidx.appcompat.app.AppCompatActivity
+import kotlinx.android.synthetic.main.jk_activity_welcome.*
 
-open class WelcomeActivity : Activity() {
+open class WelcomeActivity : AppCompatActivity() {
 
     var mediaManager: MediaManager? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_welcome)
+        setContentView(R.layout.jk_activity_welcome)
 
         start.setOnTouchListener { v, event ->
             when (event.action) {

@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="45dp"
-        android:src="@drawable/back" />
+        android:src="@drawable/jk_back" />
 
     <ImageView
         android:id="@+id/help"
@@ -20,6 +20,6 @@
         android:layout_gravity="right"
         android:layout_marginRight="15dp"
         android:layout_marginTop="45dp"
-        android:src="@drawable/help" />
+        android:src="@drawable/jk_help" />
 
 </RelativeLayout>
