@@ -1,0 +1,27 @@
+ext {
+
+    /**
+     * 需要改动的部分
+     * 版本号和code值
+     */
+    versions = [
+            versionCode      : 1,
+            versionName      : "1.0.0"
+    ]
+
+    /**
+     * 需要改动的部分
+     * 包名
+     */
+    packages = [
+            applicationId: "com.fusion.blackjack"
+    ]
+
+    /**
+     * 需要改动的部分
+     * APP名称
+     */
+    appName = [
+            APP_NAME: "BlackJack"
+    ]
+}

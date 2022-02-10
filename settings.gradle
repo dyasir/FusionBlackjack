@@ -1,0 +1,3 @@
+rootProject.name = "FusionBlackjack"
+include ':app'
+include ':BlackjackLib'
